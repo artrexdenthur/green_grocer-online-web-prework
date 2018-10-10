@@ -3,7 +3,7 @@ def consolidate_cart(cart)
   # groups identical items
   cons_cart = cart.uniq { |item| item.key }
   cons_cart.each do |name, att_hash|
-    cons_cart[name][:count] = cart.count { |item| item.key == name }
+    cons_cart[name][:count] = cart.count { |item| item.keys[0] == name }
   end
   cons_cart
 end
