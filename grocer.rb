@@ -1,7 +1,7 @@
 def consolidate_cart(cart)
   # code here
   # groups identical items
-  cons_cart = cart.uniq
+  cons_cart = cart.uniq { |item| item.key
 end
 
 def apply_coupons(cart, coupons)
