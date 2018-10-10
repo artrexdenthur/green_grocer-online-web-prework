@@ -14,7 +14,7 @@ def apply_clearance(cart)
   # applies 20% discout to all of the items on clearance
 end
 
-def checkout(cart, coupons)
+def checkout(cart: [], coupons: [])
   # code here
   # call other methods and then calculate total cost
   consolidate_cart(cart)
