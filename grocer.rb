@@ -1,6 +1,7 @@
 def consolidate_cart(cart)
   # code here
   # groups identical items
+  
 end
 
 def apply_coupons(cart, coupons)
